@@ -1,29 +1,20 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BTH_Tuan4_Bai9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        // Tạo danh sách rỗng
-        ArrayList<Integer> danhSach = new ArrayList<>();
-
-        System.out.print("Nhập số lượng phần tử trong danh sách: ");
+        System.out.print("Nhap so phan tu cua danh sach: ");
         int n = sc.nextInt();
-
-        // Nhập các phần tử
+        int[] list = new int[n];
+        System.out.println("Nhap cac phan tu cua danh sach:");
         for (int i = 0; i < n; i++) {
-            System.out.print("Nhập số nguyên thứ " + (i + 1) + ": ");
-            int x = sc.nextInt();
-            danhSach.add(x);
+            list[i] = sc.nextInt();
         }
-
-        // In danh sách
-        System.out.println("\nCác phần tử trong danh sách là:");
-        for (int so : danhSach) {
-            System.out.print(so + " ");
+        System.out.println("Cac phan tu trong danh sach:");
+        for (int i = 0; i < n; i++) {
+            System.out.println(list[i]);
         }
-
         sc.close();
     }
 }
+
