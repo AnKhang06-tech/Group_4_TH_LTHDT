@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class BTH_Tuan4_Bai7 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,6 +15,7 @@ public class BTH_Tuan4_Bai7 {
             sum = sum + arr[i]; 
         }
         System.out.println("Tong cac phan tu trong mang = " + sum);
+
         sc.close();
     }
 }
